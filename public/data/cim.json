@@ -81,7 +81,8 @@
     {
       "source": "SwitchingStation_ft",
       "target": "SwitchingStation_ftx2#hwg",
-
+      "sourceAnchor": 2,
+      "targetAnchor": 0,
       "type": "polyline",
       "style": {
         "endArrow": false,
