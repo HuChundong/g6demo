@@ -1,0 +1,93 @@
+{
+  "nodes": [
+    {
+      "id": "Substation_xjb",
+      "label": "学景变",
+      "x": 0,
+      "y": 0,
+      "type": "Substation",
+      "anchorPoints": [
+        [
+          0,
+          0.5
+        ],
+        [
+          1,
+          0.5
+        ]
+      ]
+    },
+    {
+      "id": "Substation_gqb",
+      "label": "高桥变",
+      "x": 0,
+      "y": 170,
+      "type": "Substation",
+      "anchorPoints": [
+        [
+          0,
+          0.5
+        ],
+        [
+          1,
+          0.5
+        ]
+      ]
+    },
+    {
+      "id": "SwitchingStation_ft",
+      "label": "10kV方天科技开闭所",
+      "x": -200,
+      "y": -90,
+      "type": "SwitchingStation"
+    },
+    {
+      "id": "SwitchingStation_ftx2#hwg",
+      "label": "10kV方天线2#环网柜",
+      "x": -400,
+      "y": -180,
+      "type": "SwitchingStation",
+      "busCount": 1,
+      "busChildCount": 3
+    }
+  ],
+  "edges": [
+    {
+      "source": "Substation_xjb",
+      "target": "SwitchingStation_ft",
+      "sourceAnchor": 0,
+      "targetAnchor": 0,
+      "type": "line",
+      "style": {
+        "endArrow": false,
+        "startArrow": false,
+        "stroke": "red",
+        "radius": 1
+      }
+    },
+    {
+      "source": "Substation_gqb",
+      "target": "SwitchingStation_ft",
+      "sourceAnchor": 0,
+      "targetAnchor": 1,
+      "type": "line",
+      "style": {
+        "endArrow": false,
+        "startArrow": false,
+        "stroke": "red",
+        "radius": 1
+      }
+    },
+    {
+      "source": "SwitchingStation_ft",
+      "target": "SwitchingStation_ftx2#hwg",
+
+      "type": "polyline",
+      "style": {
+        "endArrow": false,
+        "startArrow": false,
+        "stroke": "blue"
+      }
+    }
+  ]
+}
